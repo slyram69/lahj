@@ -29,5 +29,17 @@ router.get('/nativity', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
+/* GET bracelets page. */
+router.get('/bracelets', function(req, res, next) {
+  res.render('bracelets', { title: 'bracelets' });
+});
+/* GET collections page. */
+router.get('/collections', function(req, res, next) {
+  res.render('collections', { title: 'collections' });
+});
+/* GET earrings page. */
+router.get('/earrings', function(req, res, next) {
+  res.render('earrings', { title: 'earrings' });
+});
 
 module.exports = router;
