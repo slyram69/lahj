@@ -1,0 +1,41 @@
+var inventory = [
+                  // Bracelets
+                  {"image_url": "./public/image/black_white_cross_bracelet.jpg", "title": "Black & White Cross Bracelet",
+                  "price": "18.00", "description": "Black and White Cross Bracelet 7.5 Silver Cross with Agate Beads.",
+                  "category": "bracelets"},
+
+                  {"image_url": "./public/image/l_and_h_j_bracelet.jpg", "title": "Love & Honor Bracelet Stack",
+                   "price": "25.00", "description": "Love and Honor Bracelet Stack",
+                  "category": "bracelets"},
+
+                  {"image_url": "./public/image/st_benedict_dizi_stack.jpg", "title": "OLG Dizi & Gold Stack", "price": "35.00",
+                  "description": "Our lady of Guadalupe 12mm Dizi bead & gold bracelet stack.",
+                  "category": "bracelets"},
+
+
+                  //Collections
+                  {"image_url": "./public/image/crystalset.jpg", "title": "Crystal & Hematite Set", "price": "50.00",
+                  "description": "Crystal & Hematite Set, 40" necklace 7.5" bracelet. ",
+                  "category": "collections"},
+
+                  {"image_url": "./public/image/greypearlcollection.jpg", "title": "Margaret Collection", "price": "55.00",
+                  "description": "36" Grey Pearl necklace that can be worn long or doubled to be worn short.
+                  Includes St. Benedict bracelet & earrings",
+                  "category": "collections"},
+
+                  {"image_url": "./public/image/olgt-crosscollection.jpg", "title": "OLG T-Cross Collection", "price": "39.00", "description": "OLG T-Cross Collection",
+                  "category": "collections"},
+
+
+                  //Earrings
+                  {"image_url": "./public/image/angelwingturquoiseandcoral.jpg", "title": "Angel Wing Turquoise & Coral Earrings",
+                  "price": "12.00", "description": "Angel Wing Turquoise Coral earrings on gold filled post",
+                  "category": "earrings"},
+
+                  {"image_url": "./public/image/olgsilver.jpg", "title": "OLG Silver", "price": "7.00", "description": "Our Lady of Guadalupe",
+                  "category": "earrings"},
+
+                  {"image_url": "./public/image/st_benedict_silver_gold_earrings.jpg", "title": "St. Benedict Silver & Gold Earrings", "price": "10.00",
+                  "description": "St.Benedict Silver & Gold Earrings",
+                  "category": "earrings"}
+                  ];
