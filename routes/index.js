@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+//models
+var Item = require('../models/Item.js')
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'HOME' });
@@ -31,15 +34,18 @@ router.get('/contact', function(req, res, next) {
 });
 /* GET bracelets page. */
 router.get('/bracelets', function(req, res, next) {
-  res.render('bracelets', { title: 'bracelets' });
+    Item.find({'category': 'bracelets'},function(err, products){
+      console.log(products);
+      res.render('bracelets', { title: 'bracelets', products: products });
+    });
 });
 /* GET collections page. */
 router.get('/collections', function(req, res, next) {
-  res.render('collections', { title: 'collections' });
+  res.render('collections', { title: 'collections', products: 'products' });
 });
 /* GET earrings page. */
 router.get('/earrings', function(req, res, next) {
-  res.render('earrings', { title: 'earrings' });
+  res.render('earrings', { title: 'earrings', products: 'products' });
 });
 
 module.exports = router;
