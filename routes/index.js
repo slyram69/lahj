@@ -32,20 +32,29 @@ router.get('/nativity', function(req, res, next) {
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Contact' });
 });
-/* GET bracelets page. */
+ /*GET bracelets page. */
 router.get('/bracelets', function(req, res, next) {
-    Item.find({'category': 'bracelets'},function(err, products){
-      console.log(products);
-      res.render('bracelets', { title: 'bracelets', products: products });
-    });
-});
+     Item.find({'category': 'bracelets'},function(err, products){
+       console.log(products);
+       res.render('bracelets', { title: 'bracelets', products: products });
+     });
+ });
 /* GET collections page. */
-router.get('/collections', function(req, res, next) {
-  res.render('collections', { title: 'collections', products: 'products' });
-});
+ router.get('/collections', function(req, res, next) {
+   Item.find({'category': 'collections'},function(err, products){
+     console.log(products);
+     res.render('collections', { title: 'collections', products: 'products' });
+   });
+ });
 /* GET earrings page. */
 router.get('/earrings', function(req, res, next) {
+  Item.find({'category': 'earrings'},function(err, products){
+    console.log(products);
   res.render('earrings', { title: 'earrings', products: 'products' });
+    // res.redirect('/');
+  });
 });
+
+
 
 module.exports = router;

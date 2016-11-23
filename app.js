@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
+var Item = require('./models/Item');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -25,6 +26,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// mongoose.connect('mongodb://localhost/l_hj');
 mongoose.connect('mongodb://bob:pass@ds159527.mlab.com:59527/l_hj');
 
 app.use('/', index);
