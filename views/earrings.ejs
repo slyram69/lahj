@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="Silvia Ramirez" content="">
 
-    <title>L&amp;HJ Earrings - Start Bootstrap Template</title>
+    <title>L&amp;HJ <%= title %> - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <!-- Latest compiled and minified CSS -->
@@ -30,14 +30,16 @@
 <body>
 
     <!-- Navigation -->
+
     <% include ./partials/nav %>
+
     <!-- Page Content -->
     <div class="container">
 
         <div class="row">
 
             <div class="col-md-3">
-                <p class="lead">Love and Honor Jesus<%= title %></p>
+                <p class="lead">Love and Honor Jesus <%= title %></p>
                 <div class="list-group">
                     <a href="/bracelets" class="list-group-item">Bracelets</a>
                     <a href="/collections" class="list-group-item">Collections</a>

@@ -6,12 +6,19 @@ var Item = require('../models/Item.js')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'HOME' });
+  Item.find({'category': 'bracelets'},function(err, products){
+    console.log(products);
+    res.render('index', { title: 'HOME' , products: products });
+  });
 });
 /* GET home page. */
 router.get('/home', function(req, res, next) {
-  res.render('index', { title: 'HOME' });
+  Item.find({'price': {$gt: 0} },function(err, products){
+    console.log(products);
+  res.render('index', { title: 'HOME' , products: products });
+  });
 });
+
 /* GET about page. */
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'About' });
@@ -43,14 +50,14 @@ router.get('/bracelets', function(req, res, next) {
  router.get('/collections', function(req, res, next) {
    Item.find({'category': 'collections'},function(err, products){
      console.log(products);
-     res.render('collections', { title: 'collections', products: 'products' });
+     res.render('collections', { title: 'collections', products: products });
    });
  });
 /* GET earrings page. */
 router.get('/earrings', function(req, res, next) {
   Item.find({'category': 'earrings'},function(err, products){
     console.log(products);
-  res.render('earrings', { title: 'earrings', products: 'products' });
+  res.render('earrings', { title: 'earrings', products: products });
     // res.redirect('/');
   });
 });
