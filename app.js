@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // mongoose.connect('mongodb://localhost/l_hj');
-mongoose.connect('mongodb://bob:pass@ds159527.mlab.com:59527/l_hj');
+mongoose.connect(process.env.MONGO_URL);
 
 app.use('/', index);
 app.use('/users', users);
