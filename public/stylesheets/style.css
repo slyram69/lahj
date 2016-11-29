@@ -31,6 +31,12 @@ navbar-nav .a{
   padding: 20px;
 }
 
+#contactimage {
+  max-height: 450px;
+  float: center;
+  padding: 20px;
+}
+
 p{
   padding: 10px;
 }

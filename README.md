@@ -1,3 +1,5 @@
+https://loveandhonorjesus.herokuapp.com/about
+
 Proposal for project
 
 The website that I would like to propose is the love and honor jesus web-site http://www.loveandhonorjesus.com. The reason is because I worked for love and honor jesus and I uploaded all the images on this site. The owner purchased the website from 1&1 myWebsite and I helped her choose the template and upload the images also I made some of, if not most of the Jewelry.
