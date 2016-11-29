@@ -23,3 +23,14 @@ navbar-nav{
 
 navbar-nav .a{
   color: #6EBCCF !important;
+}
+
+#aboutimage {
+  max-height: 450px;
+  float: right;
+  padding: 20px;
+}
+
+p{
+  padding: 10px;
+}

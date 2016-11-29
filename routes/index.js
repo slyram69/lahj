@@ -43,21 +43,21 @@ router.get('/contact', function(req, res, next) {
 router.get('/bracelets', function(req, res, next) {
      Item.find({'category': 'bracelets'},function(err, products){
        console.log(products);
-       res.render('bracelets', { title: 'bracelets', products: products });
+       res.render('bracelets', { title: 'Bracelets', products: products });
      });
  });
 /* GET collections page. */
  router.get('/collections', function(req, res, next) {
    Item.find({'category': 'collections'},function(err, products){
      console.log(products);
-     res.render('collections', { title: 'collections', products: products });
+     res.render('collections', { title: 'Collections', products: products });
    });
  });
 /* GET earrings page. */
 router.get('/earrings', function(req, res, next) {
   Item.find({'category': 'earrings'},function(err, products){
     console.log(products);
-  res.render('earrings', { title: 'earrings', products: products });
+  res.render('earrings', { title: 'Earrings', products: products });
     // res.redirect('/');
   });
 });
